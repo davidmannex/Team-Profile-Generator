@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "node index.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/davidmannex/Team-Profile-Generator/issues"
   },
-  "homepage": "https://github.com/davidmannex/Team-Profile-Generator#readme"
+  "homepage": "https://github.com/davidmannex/Team-Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^6.5.2"
+  },
+  "devDependencies": {
+    "jest": "^29.4.3"
+  }
 }
