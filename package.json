@@ -1,0 +1,22 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "A program to make a team profile ",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidmannex/Team-Profile-Generator.git"
+  },
+  "author": "david",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidmannex/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/davidmannex/Team-Profile-Generator#readme"
+}
