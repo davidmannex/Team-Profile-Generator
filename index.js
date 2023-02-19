@@ -63,37 +63,30 @@ function addEmployee(){
         var finalQuestion=[]
         switch(inputs.role){
             case "Manager":{
-                console.log("manager1");
                 finalQuestion=managerQuestion;
                 break;
                 }
 
             case "Engineer":{
-                console.log("Engineer1")
                 finalQuestion=engineerQuestion;
                 break;
             }
             case "Intern":{
-                console.log("intern1");
                 finalQuestion=internQuestion;
                 break;}
         }
         inquirer.prompt(finalQuestion).then(function(finalData)
         {
-            console.log(inputs.role);
             switch(inputs.role){
                 case "Manager":{
-                    console.log("manager2")
                     teamMembers.push(new Manager(inputs.name,inputs.id,inputs.email,finalData.data));
                     break;
                 }
                 case "Engineer":{
-                    console.log("Engineer2")
                     teamMembers.push(new Engineer(inputs.name,inputs.id,inputs.email,finalData.data));
                     break;
                 }
                 case "Intern":{
-                    console.log("intern2");
                     teamMembers.push(new Intern(inputs.name,inputs.id,inputs.email,finalData.data));
                     break;}
                 }
@@ -114,7 +107,6 @@ function addEmployee(){
 
 function buildPage(){
     var data=generateHTML(teamMembers);
-    console.log(data);
     fs.writeFileSync('dist/index.html', data, "UTF-8");
 }
 
